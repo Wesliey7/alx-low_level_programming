@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
 * main - print if the number is postive, zero, or negative
@@ -17,4 +16,3 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 putchar('\n');
 return (0);
 }
-
