@@ -1,29 +1,17 @@
-
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /**
- * main - entry point
+ * print_alphabet - function to print abc
  *
- * Return:always return 0
- *
+ * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	char c;
 
-	if (n < 0)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		printf("%d is negative\n", n);
-	} else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	} else
-	{
-		printf("%d is positive\n", n);
+		_putchar(c);
 	}
-	return (0);
+_putchar('\n');
 }
 
