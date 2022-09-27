@@ -1,21 +1,32 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints the chessboard
- * @a: pointer to pieces to print
+ * _strstr - locates a substring
+ * @haystack: string in which to check for needle
+ * @needle: substring to find in haystack
  *
- * Return: void
+ * Return: pointer to beginning of needle in haystack or NULL if no match
  */
-void print_chessboard(char (*a)[8])
+char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
+	unsigned int i = 0, j = 0;
 
-	for (i = 0; i < 8; i++)
+	while (haystack[i])
 	{
-		for (j = 0; j < 8; j++)
+		while (needle[j] && (haystack[i] == needle[0]))
 		{
-			_putchar(a[i][j]);
+			if (haystack[i + j] == needle[j])
+				j++;
+			else
+				break;
 		}
-		_putchar('\n');
+		if (needle[j])
+		{
+			i++;
+			j = 0;
+		}
+		else
+			return (haystack + i);
 	}
+	return (0);
 }
