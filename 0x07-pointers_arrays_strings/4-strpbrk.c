@@ -5,7 +5,7 @@
  * @s: string to check
  * @accept: string to check against
  *
- * Return: pointer to byte in s or NULL if no match
+ * Return: pointer to byte in s that matches or NULL if no match
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -16,13 +16,10 @@ char *_strpbrk(char *s, char *accept)
 		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
-
-break;
+				break;
 		}
 		if (accept[j])
-
-return (s +i);
+			return (s + i);
 	}
 	return (0);
 }
-
