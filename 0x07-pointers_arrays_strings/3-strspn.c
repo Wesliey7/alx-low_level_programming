@@ -5,10 +5,10 @@
  * @s: string to be checked
  * @accept: string to check against
  *
- * Return: number of bytes in accept
+ * Return: number of bytes s in accept
  */
 
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 
