@@ -1,24 +1,23 @@
 #include <stdio.h>
-#include <stdlib.b>
+#include <stdlib.h>
 /**
- * main - program that multiplies two numbers
- * argc: argument that counts argument input
- * @argv: argument that stores argument strings
- *
- * Return: return success
+ * main - program that prints its name, followed by a new line
+ * @argc: argument that counts argument input
+ * @argv: argument that stores the strings in an array of char* (strings)
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, mul;
+	int num_1, num_2, mul;
 
 	if (argc != 3)
 		printf("Error\n");
 	else
 	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
-		mul = num1 * num2;
-		printf("%d\n", mul)
+		num_1 = atoi(argv[1]);
+		num_2 = atoi(argv[2]);
+		mul = num_1 * num_2;
+		printf("%d\n", mul);
 	}
 	return (0);
 }
