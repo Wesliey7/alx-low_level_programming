@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.b>
-
 /**
  * main - program that multiplies two numbers
  * argc: argument that counts argument input
@@ -23,4 +22,3 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
